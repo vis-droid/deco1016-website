@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="oboarding.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="webicon.png"/>
+    <script src="https://kit.fontawesome.com/7e67e42fa6.js" crossorigin="anonymous"></script>
+    <title>Specsavers Book Appointment</title>   
+</head>
+<body>
+
+      <!-- Header Section -->
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <a href="webprototype.html"><h1>Specsavers</h1></a>
+                    <div>
+                        
+                    </div>
+            </div>
+
+            <ul class="navigation">
+                <div id = "menu-bar">
+                    <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class ="nav" id="nav">
+                        <!-- Remember to link these #'s to their pages -->
+                        <li><a href="webprototype.html">Home</a></li>
+                        <li><a href="#">Book Appointment</a></li>
+                        <li><a href="#">Glasses</a></li>
+                        <li><a href="#">Eye Care</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    <br>
+                        <a><li><input class="MyButton" onclick="window.location.href='signup.html'" type="button" value="Sign Up"/></li></a>
+                    </ul>
+                    
+                 </div>
+                 <div class="menu-bg" id="menu-bg"></div>
+        
+                 <!-- JavaScript Link -->
+                <script src="webprototype.js"></script>
+
+            </ul>
+                
+        </div>
+     
+    </div>
+
+
+
+
+    <!-- onboarding - medicare WITHOUT restrictions-->
+    <div class="wrapper">
+        <div class="contact-form">
+            <div class="input-fields">
+                <input type="text" class="input" placeholder="Name">
+                <input type="text" class="input" placeholder="Medicare Number">
+                <input type="text" class="input" placeholder="IRN">
+                <input type="text" class="input" placeholder="Test type (eye test/ contact lens)">
+            </div>
+            <div class="msg">
+                <textarea placeholder="Any additional information that we should be aware of?"></textarea>
+                <div class="btn">Send</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- onboarding - medicare WITH restrictions-->
+    
+    <div id="main-container">
+        <div id="main-wrapper">
+            <div class="column detail-wrapper">
+            <h2 class="title">Eye Appointment</h2>
+            <div class =" product-detail">
+                <img src="eyetest.jpg" alt="">
+                <p class="product-name"> General Checking</p>
+                <p class="product-price">$45</p>
+            </div>
+
+            </div>  <!-- /detail-wrapper-->
+
+            <div class="column form-wrapper">
+                <form action="">
+                    <label for="">
+                        <input type="text" id="name" required>
+                        <span>Name</span>
+                    </label>
+
+                    <label for="">
+                            <input type="text" id="c-card" required> <!-- c-card = Credit Card-->
+                            <span>Credit Card</span>
+                        </label>
+
+                        <label for="">
+                            Expires On:
+                        </label>
+
+                        <select name="" id="">
+                            <option value="" selected>January</option>
+                            <option value="">February</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                            <option value="">May</option>
+                            <option value="">June</option>
+                            <option value="">July</option>
+                            <option value="">August</option>
+                            <option value="">September</option>
+                            <option value="">October</option>
+                            <option value="">November</option>
+                            <option value="">December</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">2019</option>
+                            <option value="" selected>2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                        </select>
+
+                        <div class="div.btn-checkout">
+                            <button type="submit">Book</button>
+                        </div>
+                </form>
+            </div>    <!-- .form-wrapper-->
+        </div>
+    </div>
+
+
+</body>
+</html>

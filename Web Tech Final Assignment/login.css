@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    height: 850px ;
+    background: linear-gradient(-45deg,#fcc8a8,#e87559, #b6544b, #3f1818);
+}
+
+
+/*Header*/
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #2e2d2d;
+}
+
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    cursor: pointer; 
+    float: left; 
+}
+
+.logo_container p{
+    position: absolute;
+    top: 25px;
+    left: 90px;
+    color: #ffbc93;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Orbitron';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #FFBC93;
+    cursor: pointer;
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 16px;
+}
+
+.MyButton{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3f1818;
+    text-decoration: none;
+
+}
+
+.MyButton{
+    padding: 9px 25px;
+    background-color: rgb(232, 117, 89);
+    border: none;
+    border-radius: 50px;
+    transition: all 0, 3s ease 0s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.MyButton:hover{
+    background-color: rgba(232, 117, 89, 0.8);
+    cursor: pointer;
+/*this is what gives the sign up button the 3d effect*/
+    border-top: 2px solid #FFBC93;
+}
+
+
+#menu{
+    width: 35px;
+    height: 30px;
+    left: 20px;
+    margin: 32.5px 0 170px 200px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width:100%;
+    background-color: #ffbc93;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav li a{
+    color: #ffbc93;
+    font-family:'Didact Gothic', sans-serif;
+    text-decoration: none;
+    font-size: 15pt;
+    
+}
+
+.nav li a:hover{
+    color: #e87559;
+    font-family:'Didact Gothic', sans-serif;
+    transition: .5s;
+
+}
+.nav li{
+    list-style: none;
+    padding: 20px 10px;
+    right: 30;
+}
+
+.nav{
+    padding: 16px 0;
+    margin: 0 20px;
+    transition: 0.3 ease;
+    display: none;
+}
+
+.menu-bg, #menu-bar{
+    top: 0px;
+    right:100px;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top:10%;
+    right:-750px;
+    margin: 200px 200px 200px 200px;
+    background: #4d4b4b;
+    border-radius: 30%;
+    transition: 0.3s ease;
+}
+
+#menu-bar{
+    z-index: 2;
+}
+
+.change-bg{
+    width: 550px;
+    height:540px;
+    transform: translate(-60%,-30%);
+}
+
+.change .bar{
+    background-color: #ffbc93;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+    opacity:0;
+}
+
+.change{
+    display: block;
+}
+
+
+.page-background{
+    background: #e87559;
+}
+/*login*/
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Didact Gothic', sans-serif;;
+    background: #2e2d2d;
+    border-radius: .8rem;
+    text-align: center;
+}
+
+.box h1{
+    color:#bbbebe;
+    text-transform: uppercase;
+    background: #2e2d2d;
+    font-weight: bold 500;
+
+}
+
+.box input[type ="text"],.box input[type="password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #e87559;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type ="text"]:focus,.box input[type="password"]:focus{
+    width: 280px;
+    border-color:#FFBC93;
+}
+
+.box input[type ="submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FFBC93;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type ="submit"]:hover{
+    background: #FFBC93;
+}
+
+

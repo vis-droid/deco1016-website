@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*Header*/
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+
+    background-color: #2e2d2d;
+}
+
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    cursor: pointer; 
+    float: left; 
+}
+
+.logo_container h1{
+    position: absolute;
+    top: 25px;
+    left: 90px;
+    color: #ffbc93;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Orbitron';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #FFBC93;
+    cursor: pointer;
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 16px;
+}
+
+.MyButton{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3f1818;
+    text-decoration: none;
+
+}
+
+.MyButton{
+    padding: 9px 25px;
+    background-color: rgb(232, 117, 89);
+    border: none;
+    border-radius: 50px;
+    transition: all 0, 3s ease 0s;
+}
+
+.MyButton:hover{
+    background-color: rgba(232, 117, 89, 0.8);
+    cursor: pointer;
+/*this is what gives the sign up button the 3d effect*/
+    border-top: 2px solid #FFBC93;
+}
+
+
+#menu{
+    width: 35px;
+    height: 30px;
+    left: 20px;
+    margin: 32.5px 0 170px 200px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width:100%;
+    background-color: #ffbc93;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav li a{
+    color: #ffbc93;
+    font-family:'Didact Gothic', sans-serif;
+    text-decoration: none;
+    font-size: 15pt;
+    
+}
+
+.nav li a:hover{
+    color: #e87559;
+    font-family:'Didact Gothic', sans-serif;
+    transition: .5s;
+
+}
+.nav li{
+    list-style: none;
+    padding: 20px 10px;
+    right: 30;
+}
+
+.nav{
+    padding: 16px 0;
+    margin: 0 20px;
+    transition: 0.3 ease;
+    display: none;
+}
+
+.menu-bg, #menu-bar{
+    top: 0px;
+    right:100px;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top:10%;
+    right:-750px;
+    margin: 200px 200px 200px 200px;
+    background: #4d4b4b;
+    border-radius: 30%;
+    transition: 0.3s ease;
+}
+
+#menu-bar{
+    z-index: 2;
+}
+
+.change-bg{
+    width: 550px;
+    height:540px;
+    transform: translate(-60%,-30%);
+}
+
+.change .bar{
+    background-color: #ffbc93;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+    opacity:0;
+}
+
+.change{
+    display: block;
+}
+/*onboarding - medicare card WITHOUT optometry restrictions*/
+.wrapper{
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Didact Gothic', sans-serif;
+    position: absolute;
+    /*change position here*/
+    top: 180%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.contact-form{
+    /*change the width of black box*/
+    max-width: 500px;
+    margin: 0 auto; 
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width: 48%;
+}
+
+.input-fields .input, 
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #e87559;
+    padding: 10px;
+    color: #e87559;
+    width: 100%;
+
+}
+
+.wrapper .msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #e87559;
+}
+
+::-moz-input-placeholder{
+    color: #e87559;
+}
+
+::-ms-input-placeholder{
+    color: #e87559;
+}
+
+.btn{
+    background: #ffbc93;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*onboarding - Medicare cards WITH optometry restrictions*/
+*, *:before, :after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    color: #222;
+    font-family:'Didact Gothic', sans-serif;
+}
+
+img{
+max-width: 200px;
+border-radius: .8rem;
+}
+
+#main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#main-wrapper{
+    width: 100%;
+    max-width: 900px;
+    min-width: 500px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+#main-wrapper .column{
+    padding: 40px;
+
+}
+
+#main-wrapper .column.detail-wrapper{
+    width: 40%;
+    border-radius: 5px 0 0 5px;
+}
+
+#main-wrapper .column.form-wrapper{
+    width: 60%;
+    background: #e87559;
+    border-radius: 0 5px 5px 0;
+
+}
+
+#main-wrapper .title{
+    font-weight: 700;
+    color: #e87559;
+    text-align: center;
+    position: relative;
+}
+
+#main-wrapper .title:before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #e87559;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-detail{
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.product-detail img{
+    width: 45%;
+    margin-bottom: 20px;  
+}
+
+.product-detail .product-name{
+    font-weight: 700;
+}
+
+.product-detail .product-price{
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+
+/*form style sheet (credit card)*/
+
+.form-wrapper form{
+    margin-top: 80px;
+}
+
+.form-wrapper form label{
+    display: block;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-wrapper form label span{
+    position: absolute;
+    top: 10px; left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.form-wrapper input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.form-wrapper input:focus + span{
+    top: -10px;
+    font-size: 12px;
+}
+
+.form-wrapper form select{
+    background: transparent;
+    padding: 7px 0;
+    width: calc(50% - 3px);
+    color: white;
+    border-color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-wrapper form select option{
+    color: #222;
+}
+
+button{
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: white;
+    color: #e87559;
+}
+
+
+/*Media Query - WITHOUT medicare restrictions*/
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px; 
+    }
+    .input-fields,
+    .msg{
+        width: 100% ;
+    }
+}
+
+/*Media Query - WITH medicare restrictions*/
+@media only screen and (max-width: 992px){
+    #main-wrapper .column{
+        flex: 1;
+        width: 100% !important;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #main-wrapper{
+        flex-flow: column wrap;
+
+    }
+}
